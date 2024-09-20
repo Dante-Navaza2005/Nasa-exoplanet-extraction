@@ -1,28 +1,27 @@
-<h1 align="center">Analise de dados NASA</h1>
+<h1 align="center">Extração de dados NASA</h1>
 <p align="center">
-  <i>This machine learning model made in python utilizes supervised learning to predict the daily rental price for Airbnb properties!</i>
+  <i>Este código utiliza a API da NASA para realizar uma análise abrangente dos avanços tecnológicos na exploração espacial e suas demandas crescentes.</i>
   <br/><br/>
-  <a href="https://airbnb-rio-de-janeiro.onrender.com/" target="_blank">
-  <img width="100%" alt="Dante" src="https://peace-love-travel.com/wp-content/uploads/2018/10/tips-brazil-rio-de-janeiro-panorama.jpg"/>
+  <a href="https://github.com/Dante-Navaza2005" target="_blank">
+  <img width="100%" alt="Dante" src="https://live.staticflickr.com/65535/52211883534_f45cb76810.jpg"/>
   </a>
   <br/><br/>
-  <b><a href="https://drive.google.com/file/d/1P1ckjVeNEzY2vsotrbJ40tccq3k0RTRE/view?usp=sharing">Download .exe folder</a></b> | <b><a href="https://airbnb-rio-de-janeiro.onrender.com/">Wikipedia</a></b> | <b><a href="https://github.com/Dante-Navaza2005">My profile</a></b> | <b><a href="https://www.linkedin.com/in/dante-navaza/">LinkedIn</a></b>
+  <b><a href="https://api.nasa.gov">Documentação API NASA</a></b> | <b><a href="https://github.com/Dante-Navaza2005">Meu perfil</a></b> | <b><a href="https://www.linkedin.com/in/dante-navaza/">LinkedIn</a></b>
   <br/><br/>
-  <a href="https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro/releases"><img src="https://img.shields.io/github/v/release/Dante-Navaza2005/Airbnb-Rio-de-Janeiro?loo=hackthebox&color=609966&logoColor=fff" alt="Latest Release"/></a>
-  <a target="_blank" href="https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro"><img src="https://img.shields.io/github/last-commit/Dante-Navaza2005/Airbnb-Rio-de-Janeiro?logo=github&color=609966&logoColor=fff" alt="Last commit"/></a>
+  <img src="https://img.shields.io/github/v/release/Dante-Navaza2005/Airbnb-Rio-de-Janeiro?loo=hackthebox&color=609966&logoColor=fff" alt="Latest Release"/>
+  <a target="_blank" href="https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro"><img src="https://img.shields.io/github/last-commit/Dante-Navaza2005/Nasa-exoplanet-extraction?logo=github&color=609966&logoColor=fff" alt="Last commit"/></a>
   <a href="https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-609966?logo=opensourceinitiative&logoColor=fff" alt="License MIT"/></a>
   <br/><br/>
-  <img src="image\README\Airbnb-Deployment-Brave-2024-04-23-00-58-16.gif" alt="Mafl" width="100%"/>
 </p>
 
-**IMPORTANT NOTE: For an in-depth look at the development process behind this project, check out the comprehensive wiki available at the header of the README or click [here](https://airbnb-rio-de-janeiro.onrender.com/). It covers every aspect of the project, from initial concept to final implementation.**
+**NOTA IMPORTANTE:** A chave API está contida em um documento separado e não está disponível no repositório. Por favor, utilize sua própria chave API, que pode ser gerada gratuitamente através do [link oficial da NASA:](https://api.nasa.gov).
 
 <details>
-  <summary><b>Table of Contents</b></summary>
+  <summary><b>Tabela de conteudo</b></summary>
 
-* [Context and objective](#-Context-and-objective)
-* [Technologies used](#-Technologies-used)
-* [Features](#-features)
+* [Contexto e objetivo](#-Contexto-e-objetivo)
+* [Tecnologias utilizadas](#-Tecnologias-utilizadas)
+* [Features principais](#-features-principais)
 * [Adjustable parameters](#%EF%B8%8F-adjustable-parameters)
 * [Getting started](#-Getting-started)
   * [Download](#Download)
@@ -34,106 +33,60 @@
 
 </details>
 
-## 🌐 Context and objective
+## 🌐 Contexto e objetivo
 
-Airbnb allows anyone with a spare room or property of any type (apartment, house, chalet, inn, etc.) to list their property for rent on a daily basis.
+Nos últimos anos, o avanço tecnológico e o financiamento da NASA têm sido cruciais para descobertas científicas que moldam nosso entendimento do universo. Desde 2005, testemunhamos um aumento significativo na capacidade de explorar e documentar fenômenos astronômicos, como a descoberta de meteoros, imagens impressionantes de planetas e galáxias, e a exploração do nosso sistema solar. Esses progressos não apenas ampliam nosso conhecimento, mas também tem o potencial de garantir um futuro prospero para a humanidade.
 
-As a host, you create your profile and list your property. In this listing, hosts should provide a comprehensive description of the property to assist renters/travelers in choosing the best accommodation and to make their listing more appealing.
+O código apresentado neste notebook foi desenvolvido para coletar dados da NASA, permitindo a análise de asteroides, a visualização de imagens do dia (APOD) e a contagem de fotos tiradas pelo Mars Rover, comparando os avancos presentes entre os anos 2005 e 2024. Através de tecnologias como APIs da NASA, pandas para manipulação de dados e visualização gráfica com matplotlib e seaborn, conseguimos ilustrar as mudanças nas descobertas e na exploração espacial. Os resultados demonstram a evolução das informações desde 2005 até os dias atuais, destacando a importância do investimento contínuo em pesquisa espacial. À medida que avançamos, fica claro que, se continuarmos a focar nesse tema, as descobertas científicas essenciais para a humanidade apenas tendem a crescer.
 
-There are numerous customizations available in the listing, ranging from minimum stay requirements, pricing, number of rooms, to cancellation policies, extra guest fees, identity verification requirements for renters, etc.
+Nosso objetivo é comparar a qualidade e a quantidade de dados coletados durante um período de sete dias em 2005 e em 2024. Essa análise permitirá descrever de forma precisa as mudanças e os avanços significativos que a exploração espacial experimentou nas últimas duas décadas. Vamos examinar os dados quantitativos, como o volume de informações obtidas, por meio de planilhas e gráficos. Além disso, avaliaremos os dados qualitativos, como a qualidade das imagens, obtendo os links das fotos para uma análise mais aprofundada.
 
-Our objective is to build a price prediction model that enables property owners to determine the appropriate daily rate for their property. Additionally, to assist renters in evaluating whether a listed property offers a competitive price compared to similar properties with similar characteristics.
+## 🔧 Tecnologias utilizadas
 
-## 🔧 Technologies used
+* **APIs da NASA** : Utilizadas para coletar dados sobre asteroides, imagens do dia (APOD) e fotos do Mars Rover.
+* **Pandas** : Biblioteca para manipulação e análise de dados, facilitando a organização e processamento das informações coletadas.
+* **Matplotlib** : Ferramenta para visualização gráfica, utilizada para gerar gráficos representativos dos dados analisados.
+* **Seaborn** : Biblioteca de visualização baseada em Matplotlib, que fornece gráficos estatísticos aprimorados e visualmente atraentes.
+* **Requests** : Usada para fazer chamadas HTTP às APIs da NASA e obter dados em formato JSON.
+* **Python** : Linguagem de programação utilizada para desenvolver o código, aproveitando suas bibliotecas para ciência de dados e análise de dados.
 
-* ⚡  **Python** : Including data science libraries such as pandas, numpy, and matplotlib
-* 🤖  **Machine Learning libraries** : Utilizing sklearn to create and train the models.
-* 🌎  **Libraries for deployment** : Streamlit for hosting on the internet and Pyinstaller and Joblib to export as .exe.
+## 🎯 Features principais
 
-## 🎯 Features
+* **Coleta de Dados de Asteroides** : Busca informações sobre asteroides próximos à Terra, incluindo nome, ID, diâmetro, velocidade e distância de passagem.
+* **Busca de Imagens do Dia (APOD)** : Recupera imagens diárias da NASA com explicações, permitindo comparar conteúdos de diferentes anos.
+* **Contagem de Fotos do Mars Rover** : Conta quantas fotos foram tiradas pelo Rover Curiosity em uma data específica, fornecendo insights sobre a exploração marciana.
+* **Análise de Dados** : Combina e processa dados coletados, permitindo a visualização e interpretação das informações sobre asteroides e imagens.
+* **Visualizações Gráficas** : Gera gráficos que mostram o número de asteroides detectados, a contagem de asteroides potencialmente perigosos e a comparação de entradas do APOD entre anos.
+* **Interface Interativa** : Apresenta detalhes das imagens do dia de forma acessível e organizada, facilitando a compreensão dos dados.
 
-* 🤖  **Machine Learning** : Employs the Extra Trees algorithm in a supervised learning model for robust property price estimation.
-* ⚡  **Real-Time** : Provides instant price predictions as you input data.
-* 🌎  **Multi-Language** : Offers documentation and a website in multiple languages for broader accessibility.
-* 🗂️  **Customizable** : Allows you to include various property features to refine model accuracy.
-* 👌  **Simple Setup** : Get started quickly by downloading an executable folder and a joblib model file.
-* 🚀  **High Speed** : Delivers price calculations within seconds. You can further boost performance by adjusting the joblib file's compression level (note: higher compression reduces speed).
-* 📲  **Executable Format** : Packaged as an executable file for easy sharing across different platforms and systems.
+## 🚀 Iniciando
 
-## ⚙️ Adjustable parameters
+Clone o repositorio:
 
-On the app page, you can adjust a variety of parameters to estimate the rental price for an Airbnb property. These parameters represent different attributes/features that influence the rental cost:
+`git clone Nasa-exoplanet-extraction`
 
-* **Latitude:** The latitude coordinates of the property
-* **Longitude:** The longitude coordinates of the property
-* **Accommodates:** Maximum number of guests
-* **Bathrooms:** Number of bathrooms
-* **Bedrooms:** Number of bedrooms
-* **Beds:** Number of beds
-* **extra_people:** Additional cost (in reais) for each guest beyond the accommodation limit
-* **minimum_nights:** Minimum number of nights required for booking
-* **Year:** The year for which the property is booked
-* **Ammount amenities:** Number of amenities available at the property
-* **Host_Listings_Count:** Number of properties listed by the host
-* **Host_is_Superhost:** Whether the host is a superhost
-* **Instant_Bookable:** Whether the property can be booked instantly
-* **Property_Type:** Type of property (e.g., house or apartment)
-* **Room_Type:** Type of room being booked (e.g., entire home/apartment or private room)
-* **Cancellation_Policy:** Type of cancellation policy (e.g., flexible, moderate, or strict)
+Dentro da terminal do projeto, crie um ambiente virtual e instale as bibliotecas necessarias presentes no requirements.txt
 
-**Note:** Some parameters, like **Property Type** and  **Room Type** , have limited options because most of the data focuses on specific categories. This was explained in more details on the [wiki](https://airbnb-rio-de-janeiro.onrender.com/src/10-Group_categories-function/10-1-group-property_type/index.html). Also the latitude and longitude **MUST** be located whithin the state of Rio de Janeiro.
+`pip install requirements.txt`
 
-## 🚀 Getting started
+Após isso, apenas rode o arquivo main.py ou o arquivo jupyter
 
-**REMINDER: For an in-depth look at the development process behind this project, check out the comprehensive wiki available at the header of the README or click [here](https://airbnb-rio-de-janeiro.onrender.com/). It covers every aspect of the project, from initial concept to final implementation.**
+Aqui está uma versão mais direta e concisa:
 
-### Download
+## 🛠️ Resultados e analise
 
-1. As the dist folder was too heavy to be committed on Github, you will need to download it from google drive. Go to the header of this README file and click on "Download .exe folder", alternatevely, click [here](https://drive.google.com/file/d/1P1ckjVeNEzY2vsotrbJ40tccq3k0RTRE/view?usp=sharing)
-2. You will be taken to a google drive with the compressed dist folder. Ignore the warnings from google drive and proceed to download the folder.
+O código coleta dados sobre a detecção de meteoros próximos à Terra, organizando-os em tabelas para dois anos. Os resultados são apresentados em um gráfico que destaca os meteoros perigosos. Essa análise mostra um aumento de 70% nas detecções de meteoros nos últimos anos, como demonstrado nos gráficos gerados pelo codigo.
 
-![image](https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro/assets/122757441/ca2209b9-f924-46a2-8e65-b7f0245a6ce2)
+![1726803684921](image/README/1726803684921.png)
 
-3. The compressed folder size is relatively large due to the extensive data used by the prediction model and the inclusion of all necessary modules and libraries whithin the executable
-4. After downloading the folder, extract it on your computer.
+![1726804250715](image/README/1726804250715.png)
 
-![1713872396966](image/README/1713872396966.png)
+![1726804275482](image/README/1726804275482.png)
 
-### Executing the file
+![1726804288708](image/README/1726804288708.png)
 
-1. Open the extracted dist folder
-2. Inside it there will be another dist folder, open it until you see a executable file called "run"
 
-![1713872730244](image/README/1713872730244.png)
-
-3. Double click the run file to execute it.
-4. When done so, a empty terminal screen will appear, **wait** until the file automatically opens the project app into your browser (It might take up to a minute depending on the device). If the link doesnt automatically open for you, click on the Local URL displayed on the terminal after it finished executing
-
-![1713872988867](image/README/1713872988867.png)
-
-5. On the first launch, the terminal might prompt you to enter your email address. If it does, just press the enter key to skip it.
-6. When entering the app page, you **NEED** to upload the final_model.joblib file into the specified box as it is the file that contains the prediction model. It should already be located inside the downlaoded dist folder, but in case it isn't a link to download it will be shown on the app page.
-
-   ![1713894266968](image/README/1713894266968.png)
-7. That's it! You can now customize the property characteristics by adjusting the parameters on the page to match your desired case. Once you're ready, click the "View the predicted value" button at the bottom of the page to see the estimated daily rental price. (**Note:** The results may take a few seconds to appear, depending on your machine's performance.)
-
-### Video demonstration
-
-Here's a video that walks you through the entire process, from opening the executable to adjusting the parameters and running the model:
-
-https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro/assets/122757441/86d065b3-7a6b-4d91-a7fb-c3d6ad2880f8
-
-## 🛠️Additional changes
-
-The code for this project is designed for flexibility, allowing users to customize it according to their needs. To start, clone the repository and open the `main_airbnb.py` file.
-
-You can experiment with different models, like the Random Forest Regressor, and adjust the attributes or features used for analysis to explore new and potentially more efficient results. For a more comprehensive guide on data handling and manipulation, refer to the [project wiki](https://airbnb-rio-de-janeiro.onrender.com/).
-
-If you want to improve the speed of the model, consider reducing the compression level in the section where the prediction model is exported as a `.joblib` file. This can speed up the model but will result in a larger file size.
-
-After making any changes, be sure to run the `main_airbnb.py` file and export the updated code as a `.exe` file. Instructions for this process can be found in the [final section of the wiki](https://airbnb-rio-de-janeiro.onrender.com/src/39-finalizing/index.html).
-
-## 🏆 Thanks and contact
+## 🏆 Dificuldades e facilidades
 
 Thank you for taking the time to read through my project. If you'd like to discuss this project further or have any questions, I'm open to connecting. Once more, feel free to reach out via email at dantenavaza2005@gmail.com or [LinkedIn](https://www.linkedin.com/in/dante-navaza/). If you're interested, you can explore my other projects on my [GitHub page](https://github.com/Dante-Navaza2005). I appreciate your interest and look forward to potential collaborations.
 

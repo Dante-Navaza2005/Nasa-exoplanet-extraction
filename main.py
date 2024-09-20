@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import List, Dict, Any
-from .api import chave_api
+from api import chave_api
 
 class NASAColetorDados:
     """Classe para buscar dados da NASA, como asteroides, APOD e fotos do Mars Rover."""
