@@ -6,7 +6,7 @@
   <img width="40%" alt="Dante" src="https://apod.nasa.gov/apod/image/2409/Bat_Taivalnaa_960.jpg"/>
   </a>
   <br/><br/>
-  <b><a href="https://api.nasa.gov">Documentação API NASA</a></b> | <b><a href="https://github.com/Dante-Navaza2005">Meu perfil</a></b> | <b><a href="https://www.linkedin.com/in/dante-navaza/">LinkedIn</a></b>
+  <b><a href="https://github.com/Dante-Navaza2005/Nasa-exoplanet-extraction">Repositorio do projeto</a></b> | <b><a href="https://api.nasa.gov">Documentação API NASA</a></b> | <b><a href="https://github.com/Dante-Navaza2005">Meu perfil</a></b> | <b><a href="https://www.linkedin.com/in/dante-navaza/">LinkedIn</a></b>
   <br/><br/>
   <img src="https://img.shields.io/github/v/release/Dante-Navaza2005/Airbnb-Rio-de-Janeiro?loo=hackthebox&color=609966&logoColor=fff" alt="Latest Release"/>
   <a target="_blank" href="https://github.com/Dante-Navaza2005/Airbnb-Rio-de-Janeiro"><img src="https://img.shields.io/github/last-commit/Dante-Navaza2005/Nasa-exoplanet-extraction?logo=github&color=609966&logoColor=fff" alt="Last commit"/></a>
