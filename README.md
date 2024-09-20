@@ -14,7 +14,7 @@
   <br/><br/>
 </p>
 
-**NOTA IMPORTANTE:** A chave API está contida em um documento separado e não está disponível no repositório. Por favor, utilize sua própria chave API, que pode ser gerada gratuitamente através do [link oficial da NASA:](https://api.nasa.gov).
+**NOTA IMPORTANTE:** A chave API está contida em um documento separado e não está disponível no repositório. Por favor, utilize sua própria chave API, que pode ser gerada gratuitamente através do [link da API oficial da NASA:](https://api.nasa.gov) (sua documentação tambem esta la).
 
 <details>
   <summary><b>Tabela de conteudo</b></summary>
