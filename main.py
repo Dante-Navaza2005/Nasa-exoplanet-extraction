@@ -1,3 +1,11 @@
+'''
+IMPORTANTE: ESTE CODIGO ESTA VERSIONADO NO GIT DENTRO DO REPOSITORIO:
+https://github.com/Dante-Navaza2005/Nasa-exoplanet-extraction
+
+A SECAO DA ANALISE DOS DADOS E O STORYTELLING ESTAO LOCALIZADOS DENTRO DO README E NO FINAL DO CADERNO JUPYTER
+'''
+
+
 #importanto bibliotecas necessarias
 import requests
 import pandas as pd

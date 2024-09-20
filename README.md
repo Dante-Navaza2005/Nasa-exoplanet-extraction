@@ -23,10 +23,9 @@
 * [Tecnologias utilizadas](#-Tecnologias-utilizadas)
 * [Features principais](#-features-principais)
 * [Estrutura do projeto](#-Estrutura-do-projeto)
-* [Getting started](#-Getting-started)
-* [Additional changes](#-Additional-changes)
-* [Thanks and contact](#-Thanks-and-contact)
-* [License](#-License)
+* [Iniciando](#-Getting-started)
+* [Dificuldades e facilidades](#-Additional-changes)
+* [Licensa](#-License)
 
 </details>
 
@@ -94,15 +93,31 @@ Utilizamos a API para obter fotos tiradas pelo Mars Rover Curiosity em Marte, co
 
 ![1726804250715](image/README/1726804250715.png)
 
+### Fotos diarias
+
+Por ultimo, similarmente, utilizamos a API para obter diversaas "fotos do dia" da nasa, que sao fotos novas retiradas pela insistuicao todo dia. O codigo obtem o link dessas fotos junto com uma breve descricao de cada e desta vez buscamos annalisar a diferenca de qualidade delas, entre as fotos de 2005 e 2024.
+
 
 ![1726804275482](image/README/1726804275482.png)
 
+Esta foto é de 2024
+
 ![1726804288708](image/README/1726804288708.png)
 
+Esta foto é de 2005
+
+Podemos observar uma diferença significativa na qualidade das fotos, com a imagem de 2024 apresentando uma resolução muito superior em comparação à de 2005. Além disso, o gráfico anterior sobre a quantidade de fotos capturadas pelo Mars Rover reforça a importância dessa evolução. A capacidade de tirar mais fotos, com maior qualidade, nos proporciona informações mais detalhadas sobre regiões cada vez mais distantes do universo. A foto de 2024, por exemplo, foi capturada a mais de 70 mil anos-luz de distância, ilustrando como essas melhorias tecnológicas podem levar a descobertas que têm o potencial de transformar o futuro da humanidade.
+
+### Conclusão
+
+Concluindo, essas fotos, juntamente com os gráficos de detecção de meteoros, evidenciam a rápida evolução tecnológica e seu impacto direto em nossas descobertas científicas. Comparado a 2005, houve um aumento de 70% nas detecções de meteoros, o que aprimora nossa capacidade de evitar catástrofes. Além disso, observamos um aumento expressivo na quantidade e qualidade das fotos capturadas pelos rovers em Marte, o que nos permite realizar descobertas ainda mais inovadoras e relevantes para o futuro da humanidade.
 
 ## 🏆 Dificuldades e facilidades
 
-Thank you for taking the time to read through my project. If you'd like to discuss this project further or have any questions, I'm open to connecting. Once more, feel free to reach out via email at dantenavaza2005@gmail.com or [LinkedIn](https://www.linkedin.com/in/dante-navaza/). If you're interested, you can explore my other projects on my [GitHub page](https://github.com/Dante-Navaza2005). I appreciate your interest and look forward to potential collaborations.
+
+Inicialmente, eu pretendia obter informações sobre a descoberta de exoplanetas utilizando a API da NASA. No entanto, ao extrair os dados, percebi que eles não seriam relevantes para minha análise, pois a API não os organiza por data. Essa foi a maior dificuldade que enfrentei, já que meu planejamento inicial se baseava na análise dos exoplanetas e sua relação com os avanços na exploração espacial. Para superar esse obstáculo, adaptei meu código e direcionei a análise para outras fontes disponíveis pela mesma API, como as imagens diárias, a frequência de detecções de meteoros e as imagens do rover.
+
+A maior facilidade veio ao lidar com os dados da detecção de meteoros. Consegui rapidamente separar as informações em duas tabelas CSV, permitindo a criação de gráficos comparativos das frequências de detecção.
 
 ## 📄 License
 
