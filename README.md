@@ -1,9 +1,9 @@
-<h1 align="center">Extração de dados NASA</h1>
+<h1 align="center">Extração de dados API NASA com Python</h1>
 <p align="center">
-  <i>Este código utiliza a API da NASA para realizar uma análise abrangente dos avanços tecnológicos na exploração espacial e suas demandas crescentes.</i>
+  <i>Este código utiliza Python e a API da NASA para realizar uma análise abrangente dos avanços tecnológicos na exploração espacial e suas demandas crescentes.</i>
   <br/><br/>
   <a href="https://github.com/Dante-Navaza2005" target="_blank">
-  <img width="100%" alt="Dante" src="https://live.staticflickr.com/65535/52211883534_f45cb76810.jpg"/>
+  <img width="40%" alt="Dante" src="https://apod.nasa.gov/apod/image/2409/Bat_Taivalnaa_960.jpg"/>
   </a>
   <br/><br/>
   <b><a href="https://api.nasa.gov">Documentação API NASA</a></b> | <b><a href="https://github.com/Dante-Navaza2005">Meu perfil</a></b> | <b><a href="https://www.linkedin.com/in/dante-navaza/">LinkedIn</a></b>
@@ -22,11 +22,8 @@
 * [Contexto e objetivo](#-Contexto-e-objetivo)
 * [Tecnologias utilizadas](#-Tecnologias-utilizadas)
 * [Features principais](#-features-principais)
-* [Adjustable parameters](#%EF%B8%8F-adjustable-parameters)
+* [Estrutura do projeto](#-Estrutura-do-projeto)
 * [Getting started](#-Getting-started)
-  * [Download](#Download)
-  * [Executing the file](#Executing-the-file)
-  * [Video demonstration](#Video-demonstration)
 * [Additional changes](#-Additional-changes)
 * [Thanks and contact](#-Thanks-and-contact)
 * [License](#-License)
@@ -59,6 +56,14 @@ Nosso objetivo é comparar a qualidade e a quantidade de dados coletados durante
 * **Visualizações Gráficas** : Gera gráficos que mostram o número de asteroides detectados, a contagem de asteroides potencialmente perigosos e a comparação de entradas do APOD entre anos.
 * **Interface Interativa** : Apresenta detalhes das imagens do dia de forma acessível e organizada, facilitando a compreensão dos dados.
 
+## 🔧 Estrutura do projeto
+
+* **Pasta image** (**Não** deletar): contém as imagens utilizadas neste README.
+* **dados_asteroides_2005.csv e dados_asteroides_2024.csv**: arquivos que contêm diversas informações sobre asteroides dos anos 2005 e 2024, respectivamente, incluindo nome, diâmetro, velocidade e data de obtenção.
+* **main.py**: arquivo principal em Python 3, que contém o código-fonte documentado.
+* **main_jupyter.ipynb**: contém o mesmo conteúdo que o main.py, mas em formato Jupyter Notebook.
+* **requirements.txt**: arquivo que lista todas as bibliotecas necessárias para instalação via pip.
+
 ## 🚀 Iniciando
 
 Clone o repositorio:
@@ -75,11 +80,20 @@ Aqui está uma versão mais direta e concisa:
 
 ## 🛠️ Resultados e analise
 
+### Analise meteoros
+
 O código coleta dados sobre a detecção de meteoros próximos à Terra, organizando-os em tabelas para dois anos. Os resultados são apresentados em um gráfico que destaca os meteoros perigosos. Essa análise mostra um aumento de 70% nas detecções de meteoros nos últimos anos, como demonstrado nos gráficos gerados pelo codigo.
 
 ![1726803684921](image/README/1726803684921.png)
 
+Os gráficos evidenciam o avanço da tecnologia de observação espacial nas últimas décadas, impulsionado por inovações rápidas e investimentos significativos. É importante notar que foram detectados meteoros potencialmente perigosos em ambos os anos, ressaltando a necessidade de monitorar esses eventos e como nossa capacidade de prevenção tem melhorado.
+
+### Analise Mars Rover Curiosity
+
+Utilizamos a API para obter fotos tiradas pelo Mars Rover Curiosity em Marte, com dados disponíveis de 2015 a 2023, focando em um único dia. O gráfico revela uma disparidade significativa no número de fotos registradas: em 2023, foram cerca de 300 fotos, enquanto em 2015, apenas 20. Essa diferença pode ser atribuída a vários fatores, como falhas na máquina ou falta de financiamento. No entanto, o mais provável é que seja resultado das melhorias tecnológicas atuais, que permitem capturar e armazenar muito mais imagens do que os modelos de rover de 2015.
+
 ![1726804250715](image/README/1726804250715.png)
+
 
 ![1726804275482](image/README/1726804275482.png)
 
