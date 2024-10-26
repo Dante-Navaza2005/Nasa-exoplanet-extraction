@@ -62,6 +62,8 @@ class NASAColetorDados:
         if resposta.status_code == 200:
             dados = resposta.json()
             fotos = dados.get('photos', [])  # Obtém a lista de fotos
+            urls_fotos = [foto['img_src'] for foto in fotos]
+            print(urls_fotos)
             return len(fotos)  # Retorna a quantidade de fotos
         print(f"Erro: {resposta.status_code}")
         return 0
